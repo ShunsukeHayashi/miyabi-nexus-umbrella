@@ -5,6 +5,9 @@
 Miyabi Nexus is not a single repository.
 It is a coordinated stack with separate responsibilities.
 
+This umbrella exists so external readers do not have to infer the structure by reading four
+repositories in the correct order.
+
 ## Layer model
 
 ### 1. GitNexus upstream
@@ -59,3 +62,16 @@ Use this rule when deciding where work belongs:
 - runtime safety and operations -> gitnexus-stable-ops
 - planning quality, context fusion, fallback logic -> context-and-impact
 - cross-repository product explanation -> Miyabi Nexus Umbrella
+
+## Practical reading order
+
+Use this order when onboarding someone new to the stack:
+
+1. Umbrella README
+   Get the one-page picture.
+2. This positioning document
+   Learn the boundaries between layers.
+3. Architecture
+   Understand data flow, planning flow, and operational flow.
+4. Adoption path
+   Choose the first repository to enter.
